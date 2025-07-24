@@ -31,6 +31,6 @@ namespace Application.Features.Mediator.Handlers.AboutHandlers
             return Unit.Value;
         }
     }
-    {
-    }
+    
+   
 }
