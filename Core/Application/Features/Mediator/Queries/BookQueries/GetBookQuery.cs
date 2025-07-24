@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Mediator.Queries.BookQueries
 {
-    public class GetBookQuery : IRequest<List<GetBookQueryResults>>
+    public class GetBookQuery : IRequest<List<GetBookQueryResult>>
     {
     }
 }

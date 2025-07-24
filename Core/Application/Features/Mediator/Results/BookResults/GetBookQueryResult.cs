@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Mediator.Results.BookResults
 {
-    public class GetBookQueryResults
+    public class GetBookQueryResult
     {
         public int Id { get; set; }
         public string Title { get; set; }
