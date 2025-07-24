@@ -33,6 +33,6 @@ namespace Application.Features.Mediator.Handlers.ContactHandlers
             }).ToList();
         }
     }
-    {
-    }
+    
+    
 }
