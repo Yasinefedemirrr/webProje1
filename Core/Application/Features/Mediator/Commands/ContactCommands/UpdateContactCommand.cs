@@ -1,17 +1,17 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entity
+namespace Application.Features.Mediator.Commands.ContactCommands
 {
-    public class Contact
+    public class UpdateContactCommand : IRequest
     {
         public int ContactID { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Message { get; set; }
-        
     }
 }
