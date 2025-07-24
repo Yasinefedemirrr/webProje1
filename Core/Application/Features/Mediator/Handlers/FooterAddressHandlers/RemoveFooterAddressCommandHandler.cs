@@ -26,6 +26,6 @@ namespace Application.Features.Mediator.Handlers.FooterAddressHandlers
             return Unit.Value;
         }
     }
-    {
-    }
+    
+    
 }
