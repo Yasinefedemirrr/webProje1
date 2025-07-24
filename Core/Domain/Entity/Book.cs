@@ -13,8 +13,7 @@ namespace Domain.Entity
         public string ShortDescription { get; set; }
         public string FullDescription { get; set; } 
         public string CoverImageUrl { get; set; }
-        public decimal? OldPrice { get; set; }
-        public decimal Price { get; set; }
+        
         public double? Rating { get; set; } 
         public bool IsPopular { get; set; } 
         public DateTime CreatedDate { get; set; }
