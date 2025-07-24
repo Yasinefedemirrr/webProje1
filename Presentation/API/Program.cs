@@ -1,4 +1,3 @@
-using Application;
 using Application.interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -19,8 +18,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<WebProjeContext>(options =>
     options.UseSqlServer("Server=YASINEFEDEMIR\\SQLEXPRESS;Database=webProje;Trusted_Connection=True;TrustServerCertificate=True;"));
 
-// MediatR (Application katmanýndaki handler'larý taratýyoruz)
-builder.Services.AddMediatR(typeof(AssemblyReference).Assembly);
+// MediatR (Tüm assembly'leri tara, ekstra referanssýz)
+builder.Services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
 // Dependency Injection
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
