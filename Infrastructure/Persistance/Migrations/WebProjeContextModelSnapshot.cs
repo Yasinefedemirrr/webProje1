@@ -105,12 +105,6 @@ namespace Persistance.Migrations
                     b.Property<bool>("IsPopular")
                         .HasColumnType("bit");
 
-                    b.Property<decimal?>("OldPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<double?>("Rating")
                         .HasColumnType("float");
 
